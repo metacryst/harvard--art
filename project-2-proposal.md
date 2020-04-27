@@ -8,11 +8,11 @@ Using the Harvard Museum API, create an art gallery for the user to view. Allow 
 
 ### Home (Gallery)
 
-![Gallery](https://user-images.githubusercontent.com/61888181/80387288-16e35a00-886e-11ea-8922-d495b31d205d.jpg)
+![Gallery](https://user-images.githubusercontent.com/61888181/80388104-15fef800-886f-11ea-8410-dbb9efacdc12.jpg)
 
 ### Movie Details
 
-![About Page](https://user-images.githubusercontent.com/61888181/80387371-2fec0b00-886e-11ea-9f71-f24c5fa76f67.jpg)
+![About Page](https://user-images.githubusercontent.com/61888181/80388111-19927f00-886f-11ea-8eef-89fe64058dbe.jpg)
 
 ### MVP User Stories
 
@@ -120,7 +120,7 @@ length: 10
 
 ## Component Hierarchy
 
-![Component Hierarchy](https://user-images.githubusercontent.com/61888181/80387820-b3a5f780-886e-11ea-8b82-5aa2f371d125.jpg)
+![Component Hierarchy](https://user-images.githubusercontent.com/61888181/80388116-1bf4d900-886f-11ea-92ab-74ef89127bd3.jpg)
 
 #### OPTIONAL Component Details
 | Component | Description | State/Props
