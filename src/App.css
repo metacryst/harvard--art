@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  color: black;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0 20px;
+  position: absolute;
+  bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#text {
+  float: right;
+  margin-right: 400px;
+  margin-top: 130px;
+}
+
+.singleImage {
+  float: left;
+  width: 300px;
+  margin-left: 200px;
+  margin-top: 150px;
+}
+
+.Birds {
+  float: left;
+  margin: 30px;
+}
+
+.readMore {
+  width: 200px;
+  height: 70px;
+  background-color: #404040;
+  text-align: center;
   color: white;
+  padding: 10px;
+  border-style: 2px solid;
 }
 
-.App-link {
-  color: #61dafb;
+#header {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-weight: 800;
+  font-size: 27pt;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.conservationStatus {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
