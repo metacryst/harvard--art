@@ -9,7 +9,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  position: absolute;
   bottom: 0px;
 }
 
@@ -30,9 +29,12 @@ a {
   margin-top: 150px;
 }
 
-.Birds {
-  float: left;
+.Arts {
   margin: 30px;
+}
+
+.galleryPiece {
+  width: 20%;
 }
 
 .readMore {
