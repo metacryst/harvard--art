@@ -7,17 +7,13 @@ class Art extends Component {
             if(this.props.match.params.title === arts[i].title) {
                 let art = arts[i];
                 return (
-                  <div>
-                    <img src={art.primaryimageurl} className="singleImage" alt={art.title}></img>
+                  <div className="singleDisplay">
+                    <a className="readMore"href={art.url}><img src={art.primaryimageurl} className="singleImage" alt={art.title}></img></a>
                       <div id="text">
                         <h1>{art.title}</h1>
-                        <h2>{`(${art.people[0].name})`}</h2>
-                        <div className="conservationStatus">
-                          <h3>Medium</h3>
-                          <p className="conservationStatusText">{art.medium}</p>
-                        </div>
-                        <div>
-                          <a className="readMore"href={art.url}>Read More</a>
+                        <h2>{art.people[0].name}</h2>
+                        <div className="medium">
+                          <p className="mediumText">{art.medium}</p>
                         </div>
                       </div>
                   </div>

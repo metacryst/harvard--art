@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 class Arts extends Component {
   render() {
     let list = this.props.artData.map((item) => {
-      if (item.primaryimageurl != null) {
+      if (item.primaryimageurl !== null && item.peoplecount !==0) {
         return (
-          <div className="Arts" key={item.title}>
+          <div className="Art" key={item.title}>
             <Link to={"/Art/" + item.title}>
               <img
                 className="galleryPiece"
@@ -18,7 +18,7 @@ class Arts extends Component {
         );
       }
     });
-    return <div>{list}</div>;
+    return <div className="Arts">{list}</div>;
   }
 }
 
