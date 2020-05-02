@@ -1,22 +1,32 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-class Birds extends Component {
-  
-    render() {
-    let list = this.props.artData.map(item => {
-      return (
-        <div className="Arts" key={item.name}>
-            <Link to={"/Art/"+ item.name}><img src={item.image} alt={item.name}></img></Link>
-        </div>
-      );
+class Arts extends Component {
+  render() {
+    let list = this.props.artData.map((item) => {
+      if (item.primaryimageurl !== null && item.peoplecount !==0) {
+        return (
+          <div className="Art" key={item.title}>
+            <Link to={"/Art/" + item.title}>
+              <img
+                className="galleryPiece"
+                src={item.primaryimageurl}
+                alt={item.title}
+              ></img>
+            </Link>
+          </div>
+        );
+      }
     });
     return (
-        <div>
-          {list}
-        </div>
+    <div className="Arts">
+      {list}
+      <div className="error">
+        {this.props.error}
+      </div>
+    </div>
     )
   }
 }
 
-export default Birds;
+export default Arts;

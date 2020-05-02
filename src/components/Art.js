@@ -4,20 +4,16 @@ class Art extends Component {
     render() {
         const arts = this.props.artData
         for(let i=0; i< arts.length; i++) {
-            if(this.props.match.params.name === arts[i].name) {
+            if(this.props.match.params.title === arts[i].title) {
                 let art = arts[i];
                 return (
-                  <div>
-                    <img src={art.image} className="singleImage" alt={art.name}></img>
+                  <div className="singleDisplay">
+                    <a className="readMore" href={art.url} target="_blank"><img src={art.primaryimageurl} className="singleImage" alt={art.title}></img></a>
                       <div id="text">
-                        <h1>{art.name}</h1>
-                        <h2>{`(${art.genus})`}</h2>
-                        <div className="conservationStatus">
-                          <h3>Conservation Status</h3>
-                          <p className="conservationStatusText">{art.conservationStatus}</p>
-                        </div>
-                        <div>
-                          <a className="readMore"href={art.homepage}>Read More</a>
+                        <h1 id="artTitle">{art.title}</h1>
+                        <h2 id="artist">{art.people[0].name}</h2>
+                        <div className="medium">
+                          <p id="mediumText">{art.medium}</p>
                         </div>
                       </div>
                   </div>
