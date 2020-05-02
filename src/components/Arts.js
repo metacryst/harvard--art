@@ -18,7 +18,14 @@ class Arts extends Component {
         );
       }
     });
-    return <div className="Arts">{list}</div>;
+    return (
+    <div className="Arts">
+      {list}
+      <div className="error">
+        {this.props.error}
+      </div>
+    </div>
+    )
   }
 }
 

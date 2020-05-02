@@ -5,33 +5,27 @@ import Arts from "./components/Arts.js"
 import Art from "./components/Art.js"
 import About from "./components/About"
 
+
 function App() {
   
   useEffect(() => {
     getartData();
-    // console.log('gi');
-    // console.log(images);
-    
-    
   }, []);
   
   const [artData, setartData] = useState([]);
+  const [error, setError] = useState('')
   
   function getartData() {    
     const url = `https://api.harvardartmuseums.org/object?classification=Paintings&sort=random&hasimage=1&apikey=${process.env.REACT_APP_KEY}`
         
-    let fetchData = async(url) => {
-      let response = await fetch(url);
-      let results = await response.json()
-      setartData(results.records)
-      console.log(results.records);
-      // console.log(artData);
-      
-      }
-      
-    fetchData(url);
-    // console.log(artData);
-    
+    fetch(url)
+      .then(response => response.json())
+      .then(response => {
+        setartData(response.records);
+      })
+      .catch(function(error) {
+        setError(error);
+      })
     }
   
     function handleClick() {
@@ -50,7 +44,7 @@ function App() {
               <Link to="/about">
                 <h2 className="about">about</h2>
                 </Link>
-              <Arts artData={artData} />
+              <Arts artData={artData} error={error}/>
             </>
           )
         }} />  
