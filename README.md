@@ -11,9 +11,8 @@ it is constructed with HTML, CSS, and ReactJS.
  ### getting the app: 
  
  - just fork and clone this repository.
- - if you want to run it locally, navigate into the app directory and install npm or yarn, react-router, and react-router-dom:
+ - if you want to run it locally, navigate into the app directory and install npm or yarn, react-router, and react-router-dom. run:
  
-run: 
  ```
  npm install
  ```
