@@ -10,10 +10,10 @@ class Art extends Component {
                   <div className="singleDisplay">
                     <a className="readMore" href={art.url} target="_blank"><img src={art.primaryimageurl} className="singleImage" alt={art.title}></img></a>
                       <div id="text">
-                        <h1>{art.title}</h1>
-                        <h2>{art.people[0].name}</h2>
+                        <h1 id="artTitle">{art.title}</h1>
+                        <h2 id="artist">{art.people[0].name}</h2>
                         <div className="medium">
-                          <p className="mediumText">{art.medium}</p>
+                          <p id="mediumText">{art.medium}</p>
                         </div>
                       </div>
                   </div>

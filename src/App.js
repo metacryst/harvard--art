@@ -54,7 +54,7 @@ function App() {
           return (
             <>
               <Link to="/">
-                <h1 className="header">"Harvard Art"</h1>
+                <h1 className="header" id="artHeader">"Harvard Art"</h1>
               </Link>
               <Link to="/about">
                 <h2 className="about">about</h2>

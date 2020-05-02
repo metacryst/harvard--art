@@ -4,15 +4,6 @@
   padding: 0 1rem;
 }
 
-nav {
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  bottom: 0px;
-}
-
 a {
   text-decoration: none;
 }
@@ -20,6 +11,7 @@ a {
 .Arts {
   display: flex;
   margin-top: 8px;
+  margin-right: 8px
 }
 
 .Art {
@@ -29,24 +21,36 @@ a {
 
 .galleryPiece {
   width: 100%;
-  margin-bottom: 1rem;
+  max-height: 800px;
 }
 
 .header {
   color: black;
   position: absolute;
-  bottom: 0px;
+  bottom: 2px;
+  left: 20px
 }
 
 .about {
-  float: right;
-  color: black;
+  color: #ff4400;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
   margin-top: 8px;
   font-weight: 800;
 }
 
+.about:hover {
+  color: #7b2619;
+}
+
+.about:active {
+  transform: translateY(4px);
+}
+
 .aboutText {
-  float: right;
+  position: absolute;
+  right: 20px;
   font-style: italic;
 }
 
@@ -55,10 +59,17 @@ h1 {
   font-size: 27pt;
 }
 
+h1:hover {
+  color: #1913c9;
+}
+
+h1:active {
+  transform: translateY(4px);
+}
+
 h2 {
   font-style: italic;
   font-weight: 200;
-  font-size: 18px;
 }
 
 .medium {
@@ -68,15 +79,41 @@ h2 {
 #text {
   margin-top: 170px;
   margin-left: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+#artTitle {
+  font-size: 3vw;
+}
+
+#artist {
+  font-size: 2vw;
+  font-style: none;
+}
+
+#mediumText {
+  font-size: 1vw;
+  font-style: italic;
 }
 
 .singleImage {
-  width: 300px;
+  max-width: 100%;
   margin-top: 150px;
   margin-left: 100px;
+  padding-bottom: 130px;
 }
 
 .singleDisplay {
   max-height: 500px;
   display: flex;
+}
+
+#artHeader {
+  background-color: white;
+  border: 2px solid black;
+  padding: 2px;
+  bottom: 0px;
+  left: 15px
 }
