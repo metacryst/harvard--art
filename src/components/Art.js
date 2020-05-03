@@ -8,7 +8,7 @@ class Art extends Component {
                 let art = arts[i];
                 return (
                   <div className="singleDisplay">
-                    <a className="readMore" href={art.url} target="_blank"><img src={art.primaryimageurl} className="singleImage" alt={art.title}></img></a>
+                    <a className="readMore" href={art.url} target="_blank" rel="noopener noreferrer"><img src={art.primaryimageurl} className="singleImage" alt={art.title}></img></a>
                       <div id="text">
                         <h1 id="artTitle">{art.title}</h1>
                         <h2 id="artist">{art.people[0].name}</h2>
