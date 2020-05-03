@@ -5,7 +5,7 @@ this is a project I made for General Assembly. it displays a gallery of painting
 
 ### technologies
 
-it is constructed with HTML, CSS, and ReactJS.
+it is constructed with HTML, CSS, and ReactJS. It uses React Router for page navigation.
 
 
  ### getting the app: 
