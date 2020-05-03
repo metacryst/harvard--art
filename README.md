@@ -1,6 +1,6 @@
 # harvard--art
 
-this is a project I made for General Assembly. it displays a gallery of paintings from the Harvard Art Museum. each painting can be viewed at a larger size, as well as the title, artist, and medium used.
+this is a project created for General Assembly. it displays a gallery of paintings from the Harvard Art Museum. each painting can be viewed at a larger size, as well as the title, artist, and medium used.
 
 
 ### technologies
