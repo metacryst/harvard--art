@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+// Hou comment: would the functional pattern work for this component since it does not rely on state? 
 class Arts extends Component {
   render() {
     let list = this.props.artData.map((item) => {
