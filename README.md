@@ -1,4 +1,4 @@
-# harvard--art
+# HARVARD ART
 
 art museum websites seem to be more interested in cataloguing than creating a gallery user experience, so I figured i would try and create a better website for simple viewing pleasure. it displays a gallery of paintings from the Harvard Art Museum. each painting can be clicked to be seen at a much larger size, along with the title, artist, and medium used. 
 
