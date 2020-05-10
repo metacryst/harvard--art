@@ -10,8 +10,13 @@ it is constructed with HTML, CSS, and ReactJS. It uses React Router for page nav
 
 ### screenshots:
 
-#gallery
+# gallery
+
 ![gallery](/public/screenshots/gallery.png?raw=true)
+
+# one painting
+
+![sheperdess](/public/screenshots/sheperdess.png?raw=true)
 
 
  ### getting the app: 
