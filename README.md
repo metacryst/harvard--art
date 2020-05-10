@@ -5,23 +5,23 @@ art museum websites seem to be more interested in cataloguing than creating a ga
 I wanted to build something i would enjoy using, and i can attest that there's something immensely satisfying about looking at paintings on here. just pull it up in full screen and explore!
 
 
-### technologies
+## technologies
 
 it is constructed with HTML, CSS, and ReactJS. It uses React Router for page navigation.
 
 
-### screenshots:
+## screenshots:
 
-# gallery
+### gallery
 
 ![gallery](/public/screenshots/gallery.png?raw=true)
 
-# one painting
+### one painting
 
 ![sheperdess](/public/screenshots/sheperdess.png?raw=true)
 
 
- ### getting the app: 
+ ## getting the app: 
  
  - just fork and clone this repository.
  - if you want to run it locally, navigate into the app directory and install npm or yarn, react-router, and react-router-dom. run:
@@ -34,6 +34,6 @@ it is constructed with HTML, CSS, and ReactJS. It uses React Router for page nav
  ```
  
  
- ### contribution guidelines:
+ ## contribution guidelines:
  
  - if you have a suggestion for a change, just submit a pull request with your updated code. otherwise, just submit an issue. i'd be happy to get suggestions!
