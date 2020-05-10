@@ -8,6 +8,12 @@ this is a project created for General Assembly. it displays a gallery of paintin
 it is constructed with HTML, CSS, and ReactJS. It uses React Router for page navigation.
 
 
+### screenshots:
+
+#gallery
+![gallery](/public/screenshots/gallery.png?raw=true)
+
+
  ### getting the app: 
  
  - just fork and clone this repository.
