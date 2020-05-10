@@ -1,6 +1,8 @@
 # harvard--art
 
-this is a project created for General Assembly. it displays a gallery of paintings from the Harvard Art Museum. each painting can be viewed at a larger size, as well as the title, artist, and medium used.
+art museum websites seem to be more interested in cataloguing than creating a gallery experience, so I figured i would try and create a better website for simple viewing pleasure. it displays a gallery of paintings from the Harvard Art Museum. each painting can be clicked to be seen at a much larger size, along with the title, artist, and medium used. 
+
+I wanted to build something i would enjoy using, and i can attest that there's something immensely satisfying about looking at paintings on here. just pull it up in full screen and explore!
 
 
 ### technologies
