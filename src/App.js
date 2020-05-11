@@ -5,10 +5,11 @@ import Arts from "./components/Arts.js"
 import Art from "./components/Art.js"
 import About from "./components/About"
 
-
+// Hou comment: nice job using functional components and hooks throughout your codebase!
 function App() {
   
   useEffect(() => {
+    // Hou comment: correct camel casing format for the function on line 13 is getArtData()
     getartData();
   }, []);
   
@@ -27,7 +28,8 @@ function App() {
         setError(error);
       })
     }
-  
+
+    // Hou comment: remove this trivial click handler  
     function handleClick() {
       console.log('click');
     }
@@ -40,10 +42,13 @@ function App() {
         <Route path="/" exact={true} render={() => {
           return (
             <>
-              <a href=''><h1 className="header" onClick={getartData}>"Harvard Art"</h1></a>
+              {/* Hou comment: consider creating a reusable Header component that you can use for every page instead of repeating the code for every page */}
+              <a href=''>
+                <h1 className="header" onClick={getartData}>"Harvard Art"</h1>
+              </a>
               <Link to="/about">
                 <h2 className="about">about</h2>
-                </Link>
+              </Link>
               <Arts artData={artData} error={error}/>
             </>
           )
@@ -53,6 +58,7 @@ function App() {
         render={(routerProps) => {
           return (
             <>
+              {/* Hou comment: consider creating a reusable Header component that you can use for every page instead of repeating the code for every page */}  
               <Link to="/">
                 <h1 className="header" id="artHeader">"Harvard Art"</h1>
               </Link>
